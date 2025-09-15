@@ -457,3 +457,140 @@ button:hover {
     top: -70px;
     right: 10px;
 }
+
+
+
+
+
+
+body {
+    font-family: Arial;
+    line-height: 1;
+    background-color: white;
+}
+
+header {
+    color: rgb(0, 0, 0);
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.logo {
+    font-size: 35px;
+}
+
+
+
+
+.banner h1 {
+    font-size: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 28px;
+    color: #333;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 10px;
+}
+
+.card {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 17px;
+}
+
+.card-content h3 {
+    margin-bottom: 5px;
+    color: #000000;
+
+}
+
+.card-content p {
+    font-size: 19px;
+    color: #000000;
+}
+
+.card.destacar img {
+    height: 220px;
+    transition: height 0.3s ease;
+    object-fit: cover;
+}
+
+
+.info-section {
+    background-color: #eaf2f8;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.info-section p {
+    max-width: 700px;
+    margin: auto;
+    font-size: 18px;
+    color: #333;
+}
+
+.adotar-btn {
+    background-color: #fc7500;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin-top: 10px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.adotar-btn:hover {
+    background-color: #fc7500;
+}
+
+.cidadeseletor {
+    background-color: white;
+    ;
+    padding: 20px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.cidadeseletor select {
+    padding: 8px 12px;
+    margin-left: 10px;
+    border-radius: 5px;
+    border: 1px solid #000000;
+}
