@@ -410,10 +410,10 @@ fieldset.grupo.campo {
     margin-left: -200px;
 }
 
-.botao1 {
+.botao1 button{
     width: 100%;
     padding: 12px;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(255, 119, 0);
     color: white;
     font-size: 20px;
     border: none;
@@ -422,8 +422,9 @@ fieldset.grupo.campo {
     margin-top: 10px;
 }
 
-.botao1:hover {
-    background-color: rgb(63, 63, 63);
+.botao1 button:hover {
+    background-color: rgb(209, 102, 1);
+    transition: background-color 0.3s ease;
 }
 
 .titulo {
