@@ -5,175 +5,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Formulário Adoção</title>
-
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #fffaf7;
-            margin: 0;
-            padding: 0;
-        }
-
-        .button2 {
-            padding: 12px;
-            background-color: rgb(255, 98, 0);
-            color: white;
-            font-size: 20px;
-            border: none;
-            border-radius: 40px;
-            cursor: pointer;
-            text-decoration: none;
-            margin: 20px;
-            display: inline-block;
-        }
-
-        .button2:hover {
-            background-color: rgb(136, 52, 0);
-        }
-
-        h1.h1 {
-            text-align: center;
-            color: #333;
-        }
-
-
-        .container-flex {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 40px;
-            flex-wrap: wrap;
-            padding: 20px;
-        }
-
-        .pelota {
-            position: relative;
-            width: 700px;
-            height: 700px;
-            background-color: rgb(255, 98, 0);
-            border-radius: 50%;
-            overflow: hidden;
-            margin-left: -325px;
-            flex-shrink: 0;
-        }
-
-        .pelota img {
-            width: 350px;
-            height: 350px;
-            margin-left: 250px;
-            margin-top: 150px;
-        }
-
-        .conteudo-formulario {
-            max-width: 300px;
-            margin-left: 300px;
-        }
-
-        .texto {
-            text-align: center;
-            font-size: 20px;
-            margin-bottom: 20px;
-            margin-right: 50px;
-            line-height: 1.5;
-        }
-
-        form {
-            padding: 30px 30px;
-            border: 1px solid rgb(255, 98, 0);
-            background-color: rgba(255, 98, 1, 0.1);
-            border-radius: 15px;
-            max-width: 100%;
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
-        }
-
-        fieldset {
-            border: 0;
-            padding: 0;
-        }
-
-        .campo {
-            margin-bottom: 1em;
-        }
-
-        .campo label {
-            margin-bottom: 0em;
-            color: #000000;
-            display: block;
-            font-weight: bold;
-        }
-
-
-        input,
-        select {
-            width: 100%;
-            padding: 0.5em;
-            border-radius: 5px;
-            border: 1px solid #ff8741;
-            box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
-            background-color: white;
-        }
-
-        input:focus,
-        select:focus {
-            background-color: #ffcab1;
-            outline: none;
-        }
-
-        .button button {
-            width: 100%;
-            padding: 12px;
-            background-color: rgb(255, 98, 0);
-            color: white;
-            font-size: 18px;
-            border: none;
-            border-radius: 25px;
-            cursor: pointer;
-            margin-top: 10px;
-        }
-
-        .button button:hover {
-            background-color: rgb(136, 52, 0);
-        }
-
-        @media (max-width: 768px) {
-            .container-flex {
-                flex-direction: column;
-                align-items: center;
-                padding: 20px;
-            }
-
-            .pelota {
-                width: 200px;
-                height: 200px;
-            }
-
-            .pelota img {
-                width: 400px;
-            }
-
-            form {
-                width: 90%;
-                padding: 20px;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="../css/cssanimais.css" />
 </head>
 
 <body>
-    <a href="#" class="button2">Voltar</a>
+    <a href="Adoção.html" class="button2">Voltar</a>
 
-    <h1 class="h1">Formulário de Adoção</h1>
+    <h1 class="h1">Abrace<span>Pet</span></h1>
 
     <div class="container-flex">
-        <div class="pelota">
-            <img src="gatoremovebg.png" alt="Imagem de um gato" />
+        <div class="pelota3">
+            <img src="../imagens/gatoremovebg.png" alt="Imagem de um gato" />
 
         </div>
-        <p class="texto">
-            A adoção transforma vidas, a sua e a de um pet!<br>
-            Dê uma chance para um amigo de quatro patas<br>
-            e faça parte da nossa comunidade do bem.
-        </p>
         <form id="formAdocao" method="POST" action="#">
             <fieldset class="grupo">
                 <div class="campo">
