@@ -410,7 +410,7 @@ fieldset.grupo.campo {
     margin-left: -200px;
 }
 
-button {
+.botao1 {
     width: 100%;
     padding: 12px;
     background-color: rgb(0, 0, 0);
@@ -422,7 +422,7 @@ button {
     margin-top: 10px;
 }
 
-button:hover {
+.botao1:hover {
     background-color: rgb(63, 63, 63);
 }
 
@@ -463,11 +463,6 @@ button:hover {
 
 
 
-body {
-    font-family: Arial;
-    line-height: 1;
-    background-color: white;
-}
 
 header {
     color: rgb(0, 0, 0);
@@ -482,16 +477,6 @@ header {
     font-size: 35px;
 }
 
-
-
-
-.banner h1 {
-    font-size: 40px;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 10px 20px;
-    border-radius: 10px;
-}
-
 .container {
     max-width: 1000px;
     margin: 40px auto;
@@ -502,7 +487,6 @@ header {
     text-align: center;
     margin-bottom: 30px;
     font-size: 28px;
-    color: #333;
 }
 
 .cards {
@@ -516,12 +500,6 @@ header {
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
-
-}
-
-.card:hover {
-    transform: translateY(-5px);
 }
 
 .card img {
@@ -547,7 +525,6 @@ header {
 
 .card.destacar img {
     height: 220px;
-    transition: height 0.3s ease;
     object-fit: cover;
 }
 
@@ -573,11 +550,11 @@ header {
     margin-top: 10px;
     border-radius: 30px;
     cursor: pointer;
-    transition: background-color 0.3s;
 }
 
 .adotar-btn:hover {
-    background-color: #fc7500;
+    background-color: #cb5404;
+    transition: background-color 0.3s ease;
 }
 
 .cidadeseletor {
