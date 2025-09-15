@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Adoção de Animais</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial;
+            line-height: 1;
+            background-color: white;
+        }
+
+        header {
+            color: rgb(0, 0, 0);
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+        }
+
+        .logo {
+            font-size: 35px;
+        }
+
+
+
+
+        .banner h1 {
+            font-size: 40px;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px 20px;
+            border-radius: 10px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 28px;
+            color: #333;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 10px;
+        }
+
+        .card {
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 17px;
+        }
+
+        .card-content h3 {
+            margin-bottom: 5px;
+            color: #000000;
+
+        }
+
+        .card-content p {
+            font-size: 19px;
+            color: #000000;
+        }
+
+        .card.destacar img {
+            height: 220px;
+            transition: height 0.3s ease;
+            object-fit: cover;
+        }
+
+
+        .info-section {
+            background-color: #eaf2f8;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .info-section p {
+            max-width: 700px;
+            margin: auto;
+            font-size: 18px;
+            color: #333;
+        }
+
+        .adotar-btn {
+            background-color: #fc7500;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            margin-top: 10px;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .adotar-btn:hover {
+            background-color: #fc7500;
+        }
+
+        .cidadeseletor {
+            background-color: white;
+            ;
+            padding: 20px;
+            text-align: center;
+            font-size: 16px;
+        }
+
+        .cidadeseletor select {
+            padding: 8px 12px;
+            margin-left: 10px;
+            border-radius: 5px;
+            border: 1px solid #000000;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">Adoção</div>
+        <div class="logo" style="color: black;">Abrace</span><span style="color: #ff6201">Pet</div>
+
+    </header>
+
+    <div class="cidadeseletor">
+        <label for="cidade">Selecione sua cidade:</label>
+        <select id="cidade" onchange="selecionarCidade()">
+            <option value="">Todos</option>
+            <option value="Bernardino Campos">Bernardino Campos</option>
+            <option value="Canitar">Canitar</option>
+            <option value="Chavantes">Chavantes</option>
+            <option value="Campos novos Paulista">Campos Novos Paulista</option>
+            <option value="Ibirarema">Ibirarema</option>
+            <option value="Ipaussu">Ipaussu</option>
+            <option value="Lupércio">Lupércio</option>
+            <option value="Manduri">Manduri</option>
+            <option value="Ocauçu">Ocauçu</option>
+            <option value="Ourinhos">Ourinhos</option>
+            <option value="Ribeirão do Sul">Ribeirão do Sul</option>
+            <option value="Salto Grande">Salto Grande</option>
+            <option value="Santa Cruz do Rio Pardo">Santa Cruz do Rio Pardo</option>
+            <option value="São Pedro do Turvo">São Pedro do Turvo</option>
+            <option value="Timburi">Timburi</option>
+            <option value="Tejupá">Tejupá</option>
+        </select>
+    </div>
+
+
+    <section class="container" id="animais">
+        <section class="container" id="animais">
+            <div class="cards">
+                <div class="card" data-cidade="Ourinhos">
+                    <img src="rex.jpg" alt="rex">
+                    <div class="card-content">
+                        <h3> Rex </h3>
+                        <p> Idade: 2 anos </p>
+                        <p> Gênero: Macho </p>
+                        <p>Cor: Preto</p>
+                        <p>Castrado e vacinado</p>
+                        <p>Ourinhos</p>
+                        <button class="adotar-btn" onclick="window.location.href='formulario.html'">Quero
+                            Adotar</button>
+                    </div>
+                </div>
+
+
+                <div class="card" data-cidade="Campos Novos Paulista">
+                    <img src="xarxixa.jpg" alt="xarxixa">
+                    <div class="card-content">
+                        <h3> Bob </h3>
+                        <p> Idade: 1 ano </p>
+                        <p> Gênero: Macho </p>
+                        <p>Cor: Preto</p>
+                        <p>Castrado e vacinado</p>
+                        <p>Campos novos Paulista</p>
+                        <button class="adotar-btn" onclick="window.location.href='formulario.html'">Quero
+                            Adotar</button>
+                    </div>
+                </div>
+
+                <div class="card" data-cidade="Ibirarema">
+                    <img src="totoro.avif" alt="totoro">
+                    <div class="card-content">
+                        <h3> Totoro </h3>
+                        <p> Idade: 8 meses </p>
+                        <p> Gênero: Fêmea </p>
+                        <p>Cor: Cinza</p>
+                        <p>Vacinada</ph3>
+                        <p>Ibirarema</p>
+
+                        <button class="adotar-btn" onclick="window.location.href='formulario.html'">Quero
+                            Adotar</button>
+
+                    </div>
+                </div>
+
+
+                <div class="card" data-cidade="Lupércio">
+                    <img src="lalaninja.jpg" alt="lalaninja">
+                    <div class="card-content">
+                        <h3> Lala </h3>
+                        <p> Idade: 3 anos </p>
+                        <p> Gênero: Fêmea </p>
+                        <p>Cor: Laranja</p>
+                        <p>Vacinada e castrada</p>
+                        <p>Lupércio</p>
+                        <button class="adotar-btn" onclick="window.location.href='formulario.html'">Quero
+                            Adotar</button>
+                    </div>
+                </div>
+
+                <div class="card" data-cidade="Manduri">
+                    <img src="nina.png" alt="nina">
+                    <div class="card-content">
+                        <h3> Nina </h3>
+                        <p> Idade: 3 anos </p>
+                        <p> Gênero: Fêmea </p>
+                        <p>Cor: Laranja</p>
+                        <p>Vacinada e castrada</p>
+                        <p>Manduri</p>
+                        <button class="adotar-btn" onclick="window.location.href='formulario.html'">Quero
+                            Adotar</button>
+
+
+                    </div>
+                </div>
+
+                <div class="card" data-cidade="Ocauçu">
+                    <img src="black.webp" alt="black">
+                    <div class="card-content">
+                        <h3> Black </h3>
+                        <p> Idade: 5 anos </p>
+                        <p> Gênero: Macho </p>
+                        <p>Cor: Preto e branco</p>
+                        <p>Vacinado e castrado</p>
+                        <p>Ocauçu</p>
+                        <button class="adotar-btn" onclick="window.location.href='formulario.html'">Quero
+                            Adotar</button>
+
+
+                    </div>
+                </div>
+
+                <div class="card" data-cidade="Ribeirão do Sul">
+                    <img src="jjojo.jpg" alt="jojo">
+                    <div class="card-content">
+                        <h3> Jojo </h3>
+                        <p> Idade: 1 ano </p>
+                        <p> Gênero: Fêmea </p>
+                        <p>Cor: Marrom</p>
+                        <p>Vacinada e castrada</p>
+                        <p>Ribeirão do Sul</p>
+                        <button class="adotar-btn" onclick="window.location.href='formulario.html'">Quero
+                            Adotar</button>
+
+
+                    </div>
+                </div>
+
+
+                <div class="card" data-cidade="Salto Grande">
+                    <img src="loki.jpg" alt="loki">
+                    <div class="card-content">
+                        <h3> Loki </h3>
+                        <p> Idade: 2 anos </p>
+                        <p> Gênero: Macho </p>
+                        <p>Cor: Cinza</p>
+                        <p>Vacinado e castrado</p>
+                        <p>Salto Grande</p>
+                        <button class="adotar-btn" onclick="window.location.href='formulario.html'">Quero
+                            Adotar</button>
+
+                    </div>
+                </div>
+
+
+                <div class="card" data-cidade="Santa Cruz do Rio Pardo">
+                    <div class="card-content">
+                        <img src="choco.jpg" alt="choco">
+                        <h3> Choco </h3>
+                        <p> Idade: 10 meses </p>
+                        <p> Gênero: Fêmea </p>
+                        <p>Cor: Marrom</p>
+                        <p>Vacinada e castrada</p>
+                        <p>Santa Cruz do Rio Pardo</p>
+                        <button class="adotar-btn" onclick="window.location.href='formulario.html'">Quero
+                            Adotar</button>
+
+                    </div>
+                </div>
+
+                <div class="card" data-cidade="São Pedro do Turvo">
+                    <img src="leo.webp" alt="leo">
+                    <div class="card-content">
+                        <h3> Leo </h3>
+                        <p> Idade: 5 anos </p>
+                        <p> Gênero: Macho </p>
+                        <p>Cor: Branco e Laranja</p>
+                        <p>Vacinado e castrado</p>
+                        <p>São Pedro do Turvo</p>
+                        <button class="adotar-btn" onclick="window.location.href='formulario.html'">Quero
+                            Adotar</button>
+
+                    </div>
+                </div>
+
+                <div class="card" data-cidade="Timburi">
+                    <img src="cachimbo.jpg" alt="cachimbo">
+                    <div class="card-content">
+                        <h3> Groot </h3>
+                        <p> Idade: 5 anos </p>
+                        <p> Gênero: Macho </p>
+                        <p>Cor: Laranja</p>
+                        <p>Vacinado</p>
+                        <p>Timburi</p>
+                        <button class="adotar-btn" onclick="window.location.href='formulario.html'">Quero
+                            Adotar</button>
+
+                    </div>
+                </div>
+
+                <div class="card" data-cidade="Tejupá">
+                    <img src="gamora.webp" alt="gamora">
+                    <div class="card-content">
+                        <h3> Gamora </h3>
+                        <p> Idade: 3 anos </p>
+                        <p> Gênero: Fêmea </p>
+                        <p>Cor: Branco, cinza, marrom</p>
+                        <p>Vacinada e castrada</p>
+                        <p>Tejupá</p>
+                        <button class="adotar-btn" onclick="window.location.href='formulario.html'">Quero
+                            Adotar</button>
+
+                    </div>
+                </div>
+
+                <div class="card" data-cidade="Bernardino Campos">
+                    <img src="frajola.jpeg" alt="frajola">
+                    <div class="card-content">
+                        <h3> Frajola </h3>
+                        <p> Idade: 4 anos </p>
+                        <p> Gênero: Macho </p>
+                        <p>Cor: Branco e preto</p>
+                        <p>Vacinado e castrado</p>
+                        <p>Bernardino Campos</p>
+                        <button class="adotar-btn" onclick="window.location.href='formulario.html'">Quero
+                            Adotar</button>
+
+                    </div>
+                </div>
+
+
+                <div class=" card" data-cidade="Chavantes">
+                    <img src="larissa.webp" alt="larissa">
+                    <div class="card-content">
+                        <h3> Larissa </h3>
+                        <p> Idade: 2 anos </p>
+                        <p> Gênero: Fêmea </p>
+                        <p>Cor: Cinza</p>
+                        <p>Vacinada e castrada</p>
+                        <p>Chavantes</p>
+                        <button class="adotar-btn" onclick="window.location.href='formulario.html'">Quero
+                            Adotar</button>
+
+                    </div>
+                </div>
+
+                <div class="card" data-cidade="Canitar">
+                    <img src="friday.jpg" alt="friday">
+                    <div class="card-content">
+                        <h3> Friday </h3>
+                        <p> Idade: 1 ano </p>
+                        <p> Gênero: Macho </p>
+                        <p>Cor: Laranja e preto</p>
+                        <p>Vacinado e castrado</p>
+                        <p>Canitar</p>
+                        <button class="adotar-btn" onclick="window.location.href='formulario.html'">Quero
+                            Adotar</button>
+
+                    </div>
+                </div>
+                <div class="card" data-cidade="Canitar">
+                    <img src="mingau.webp" alt="mingau">
+                    <div class="card-content">
+                        <h3> Mingau </h3>
+                        <p> Idade: 4 anos </p>
+                        <p> Gênero: Macho </p>
+                        <p>Cor: Branco</p>
+                        <p>Vacinado</p>
+                        <p>Canitar</p>
+                        <button class="adotar-btn" onclick="window.location.href='formulario.html'">Quero
+                            Adotar</button>
+
+                    </div>
+                </div>
+
+
+                <div class="card" data-cidade="Bernardino Campos">
+                    <img src="dokyeon.png" alt="dokyeon">
+                    <div class="card-content">
+                        <h3> Cosmo </h3>
+                        <p> Idade: 1 ano </p>
+                        <p> Gênero: Macho </p>
+                        <p>Cor: Preto</p>
+                        <p>Vacinado e castrado</p>
+                        <p>Bernardino Campos</p>
+                        <button class="adotar-btn" onclick="window.location.href='formulario.html'">Quero
+                            Adotar</button>
+
+                    </div>
+                </div>
+
+
+                <div class="card" data-cidade="Ourinhos">
+                    <img src="cacau.jpg" alt="cacau">
+                    <div class="card-content">
+                        <h3> Cacau </h3>
+                        <p> Idade: 3 anos </p>
+                        <p> Gênero: Fêmea </p>
+                        <p>Cor: Marrom</p>
+                        <p>Vacinada e castrada</p>
+                        <p>Ourinhos</p>
+                        <button class="adotar-btn" onclick="window.location.href='formulario.html'">Quero
+                            Adotar</button>
+
+                    </div>
+                </div>
+
+
+                <div class="card" data-cidade="Ribeirão do Sul">
+                    <img src="leia.jpg" alt="leia">
+                    <div class="card-content">
+                        <h3> Leia </h3>
+                        <p> Idade: 8 meses </p>
+                        <p> Gênero: Fêmea </p>
+                        <p>Cor: Marrom</p>
+                        <p>Vacinada e castrada</p>
+                        <p>Ribeirão do Sul</p>
+                        <button class="adotar-btn" onclick="window.location.href='formulario.html'">Quero
+                            Adotar</button>
+
+                    </div>
+                </div>
+
+
+                <div class="card" data-cidade="Salto Grande">
+                    <img src="megan.jpg" alt="megan">
+                    <div class="card-content">
+                        <h3> Megan </h3>
+                        <p> Idade: 4 anos </p>
+                        <p> Gênero: Fêmea </p>
+                        <p>Cor: Branco e preto</p>
+                        <p>Vacinada e castrada</p>
+                        <p>Salto Grande</p>
+                        <button class="adotar-btn" onclick="window.location.href='formulario.html'">Quero
+                            Adotar</button>
+
+                    </div>
+                </div>
+
+
+                <div class="card" data-cidade="Santa Cruz do Rio Pardo">
+                    <img src="chinomoreno.jpg" alt="chinomoreno">
+                    <div class="card-content">
+                        <h3> Ozzy </h3>
+                        <p> Idade: 3 anos </p>
+                        <p> Gênero: Macho </p>
+                        <p>Cor: Preto</p>
+                        <p>Vacinado e castrado</p>
+                        <p>Santa Cruz do Rio Pardo</p>
+                        <button class="adotar-btn" onclick="window.location.href='formulario.html'">Quero
+                            Adotar</button>
+
+                    </div>
+                </div>
+
+
+                <div class="card" data-cidade="São Pedro do Turvo">
+                    <img src="renatorusso.jpg" alt="renatorusso">
+                    <div class="card-content">
+                        <h3> Ayla </h3>
+                        <p> Idade: 4 anos </p>
+                        <p> Gênero: Fêmea </p>
+                        <p>Cor: Tricolor</p>
+                        <p>Vacinada e castrada</p>
+                        <p>São Pedro do Turvo</p>
+                        <button class="adotar-btn" onclick="window.location.href='formulario.html'">Quero
+                            Adotar</button>
+
+                    </div>
+                </div>
+
+
+                <div class="card" data-cidade="Timburi">
+                    <img src="woonyoung.png" alt="woonyoung">
+                    <div class="card-content">
+                        <h3> Mimi </h3>
+                        <p> Idade: 2 anos </p>
+                        <p> Gênero: Fêmea </p>
+                        <p>Cor: Cinza</p>
+                        <p>Vacinada e castrada</p>
+                        <p>Timburi</p>
+                        <button class="adotar-btn" onclick="window.location.href='formulario.html'">Quero
+                            Adotar</button>
+
+                    </div>
+                </div>
+
+
+
+                <div class="card" data-cidade="Tejupá">
+                    <img src="mastigado.jpg" alt="mastigado">
+                    <div class="card-content">
+                        <h3> Tobby </h3>
+                        <p> Idade: 10 meses </p>
+                        <p> Gênero: Macho </p>
+                        <p>Cor: Cinza</p>
+                        <p>Vacinado e castrado</p>
+                        <p>Tejupá</p>
+                        <button class="adotar-btn" onclick="window.location.href='formulario.html'">Quero
+                            Adotar</button>
+
+                    </div>
+                </div>
+
+
+                <div class="card" data-cidade="Campos Novos Paulista">
+                    <img src="petersteele.png" alt="petersteele">
+                    <div class="card-content">
+                        <h3> Peter </h3>
+                        <p> Idade: 2 anos </p>
+                        <p> Gênero: Macho </p>
+                        <p>Cor: Preto</p>
+                        <p>Vacinado e castrado</p>
+                        <p>Campos novos Paulista</p>
+                        <button class="adotar-btn" onclick="window.location.href='formulario.html'">Quero
+                            Adotar</button>
+
+                    </div>
+                </div>
+
+                <div class="card" data-cidade="Ibirarema">
+                    <img src="kiddanger.jpg" alt="kiddanger">
+                    <div class="card-content">
+                        <h3> Fred </h3>
+                        <p> Idade: 2 anos </p>
+                        <p> Gênero: Fêmea </p>
+                        <p>Cor: Preto</p>
+                        <p>Vacinada e castrada</p>
+                        <p>Ibirarema</p>
+                        <button class="adotar-btn" onclick="window.location.href='formulario.html'">Quero
+                            Adotar</button>
+
+                    </div>
+                </div>
+
+                <div class="card" data-cidade="Ipaussu">
+                    <img src="michaelmyers.jpg" alt="michaelmyers">
+                    <div class="card-content">
+                        <h3> Myers </h3>
+                        <p> Idade: 4 anos </p>
+                        <p> Gênero: Macho </p>
+                        <p>Cor: Marrom e preto</p>
+                        <p>Vacinado e castrado</p>
+                        <p>Ipaussu</p>
+                        <button class="adotar-btn" onclick="window.location.href='formulario.html'">Quero
+                            Adotar</button>
+
+                    </div>
+                </div>
+                <div class="card" data-cidade="Lupércio">
+                    <img src="noodle.jpg" alt="noodle">
+                    <div class="card-content">
+                        <h3> Lola </h3>
+                        <p> Idade: 5 meses </p>
+                        <p> Gênero: Fêmea </p>
+                        <p>Cor: Tricolor</p>
+                        <p>Vacinada</p>
+                        <p>Lupércio</p>
+                        <button class="adotar-btn" onclick="window.location.href='formulario.html'">Quero
+                            Adotar</button>
+
+
+                    </div>
+                </div>
+
+                <div class="card" data-cidade="Manduri">
+                    <img src="2d.jpg" alt="2d">
+                    <div class="card-content">
+                        <h3> Marley </h3>
+                        <p> Idade: 7 meses </p>
+                        <p> Gênero: Macho </p>
+                        <p>Cor: Cinza</p>
+                        <p>Vacinado </p>
+                        <p>Manduri</p>
+                        <button class="adotar-btn" onclick="window.location.href='formulario.html'">Quero
+                            Adotar</button>
+
+
+                    </div>
+                </div>
+
+                <div class="card" cidade="Ocauçu">
+                    <img src="murdoc.jpg" alt="murdoc">
+                    <div class="card-content">
+                        <h3> Max </h3>
+                        <p> Idade: 6 meses </p>
+                        <p> Gênero: Macho </p>
+                        <p>Cor: Cinza</p>
+                        <p>Vacinado </p>
+                        <p>Ocauçu</p>
+                        <button class="adotar-btn" onclick="window.location.href='formulario.html'">Quero
+                            Adotar</button>
+                    </div>
+                </div>
+
+                <div class="card" cidade="Chavantes">
+                    <img src="silva.jpg" alt="silva">
+                    <div class="card-content">
+                        <h3> Silva </h3>
+                        <p> Idade: 3 anos </p>
+                        <p> Gênero: Macho </p>
+                        <p>Cor: Preto e branco</p>
+                        <p>Vacinado e castrado</p>
+                        <p>Chavantes</p>
+                        <button class="adotar-btn" onclick="window.location.href='formulario.html'">Quero
+                            Adotar</button>
+                    </div>
+                </div>
+
+                <div class="card" cidade="Ipaussu">
+                    <img src="scooby.png" alt="scooby">
+                    <div class="card-content">
+                        <h3> Scooby </h3>
+                        <p> Idade: 11 meses </p>
+                        <p> Gênero: Macho </p>
+                        <p>Cor: Marrom e branco</p>
+                        <p>Vacinado </p>
+                        <p>Ipaussu</p>
+                        <button class="adotar-btn" onclick="window.location.href='formulario.html'">Quero
+                            Adotar</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <script>
+                function selecionarCidade() {
+                    const cidadeSelecionada = document.getElementById("cidade").value;
+                    const cards = document.querySelectorAll(".card");
+
+                    cards.forEach(card => {
+                        const cidadeDoCard = card.getAttribute("data-cidade");
+
+                        if (cidadeSelecionada === "" || cidadeSelecionada === cidadeDoCard) {
+                            card.style.display = "block";
+                            card.classList.add("destacar");
+                        } else {
+                            card.style.display = "none";
+                            card.classList.remove("destacar");
+                        }
+                    });
+                }
+
+            </script>
+
+
+        </section>
+
+</body>
+
+</html>
