@@ -593,6 +593,12 @@ header {
 
 
 
+
+
+
+
+
+
 .button2 {
     padding: 12px;
     background-color: rgb(255, 98, 0);
@@ -630,15 +636,6 @@ h1.h1 {
     gap: 40px;
     flex-wrap: wrap;
     padding: 20px;
-}
-
-.pelota3 {
-    width: 700px;
-    height: 700px;
-    background-color: rgb(255, 98, 0);
-    border-radius: 50%;
-    margin-left: -700px;
-    clip-path: inset(0 0 30% 0);
 }
 
 .pelota3 img {
@@ -706,32 +703,7 @@ select {
     background-color: rgb(136, 52, 0);
 }
 
-
-
-@media (max-width: 768px) {
-    .container-flex {
-        flex-direction: column;
-        align-items: center;
-        padding: 20px;
-    }
-
-    .pelota {
-        width: 200px;
-        height: 200px;
-    }
-
-    .pelota img {
-        width: 400px;
-    }
-
-    form {
-        width: 90%;
-        padding: 20px;
-    }
-}
-
-
-.pelota {
+.pelota4 {
     width: 650px;
     height: 650px;
     background-color: rgb(255, 98, 0);
@@ -742,12 +714,13 @@ select {
     position: absolute;
 }
 
-    .texto {
+    .textinhodoe {
         font-size: 25px;
         position: absolute;
-        top: 60%;
+        top: 50%;
         left: 300px;
         transform: translateY(-50%);
+        max-width: 400px;
     }
 
     .h1 {
@@ -795,16 +768,14 @@ select {
     }
     
 
-    form {
+    .outroform form {
     padding: 30px 40px;
     border: none;
     background-color: transparent;
     border-radius: 15px;
     border: 1px solid rgb(255, 98, 0);
     max-width: 250px;
-    
     margin: 20px auto;
-    
     margin-left: auto;
     margin-right: 150px;
 }
