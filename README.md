@@ -27,3 +27,9 @@ Estes são elementos de nível de criticidade AA ou AAA. Além disso, usamos o c
 **Empreendedorismo**
 Para a parte de empreendedorismo, fizemos uma loja. Essa loja seria para usuários venderem seus produtos e também, nós mesmos vendermos nossos próprio produtos. Decidimos que parte do dinheiro das vendas seria arrecadado para as nossos parceiros.
 Para incentivar a doação voluntária e compras no nosso site, colocamos uma parte, na página inicial, que reconheceria nossos maiores colaboradores do mês (ele atualizaria todo mês com as pessoas que mais contribuíram), para ilustrar, colocamos fotos de 3 de nossos integrantes, e também, eles ganhariam descontos e brindes na nossa loja.
+
+**O que é necessário para a execução desse projeto?**
+* Back-end;
+* Uma equipe;
+* Clientes;
+* ONGs/abrigos parceiros.
