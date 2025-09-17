@@ -188,6 +188,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    object-fit: cover;
 }
 
 .titulosobre span {
@@ -198,7 +199,6 @@ body {
     width: 300px;
     height: 300px;
     border-radius: 50%;
-    object-fit: cover;
 }
 
 .paragrafos {
@@ -794,12 +794,12 @@ header {
 
 .cidadeseletor {
     background-color: transparent;
-    padding: 20px;
     text-align: center;
     font-size: 16px;
     width: 200px;
     flex-direction: column;
     align-items: center;
+    margin: 40px auto;
 }
 
 .cidadeseletor select {
@@ -820,7 +820,7 @@ header {
 .titulocentralizado2 {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 50px;
 }
 
 .sobreoprojeto {
@@ -828,6 +828,21 @@ header {
     margin: 40px auto;
     text-align: center;
 }
+
 .sobreoprojeto span {
     color: rgb(255, 98, 0);
+}
+
+.voltar2 {
+    padding: 12px;
+    background-color: rgb(255, 98, 0);
+    color: white;
+    font-size: 20px;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: -20px;
+    display: inline-block;
+    position: fixed;
 }
