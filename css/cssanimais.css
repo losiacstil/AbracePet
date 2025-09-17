@@ -1,4 +1,3 @@
-/*pagina inicial*/
 @font-face {
     font-family: 'Poppins-light';
     src: url('../fonte/Poppins-Light.ttf') format('truetype')
@@ -345,8 +344,6 @@ body {
 
 
 
-
-/*formulario de cadastro*/
 h1 span {
     color: rgb(255, 98, 0);
 }
@@ -536,7 +533,6 @@ fieldset.grupo.campo {
 
 
 
-/*doação*/
 .container-flex {
     display: flex;
     align-items: center;
@@ -695,7 +691,6 @@ fieldset.grupo.campo {
 
 
 
-/*adoção*/
 header {
     color: rgb(0, 0, 0);
     padding: 20px 40px;
@@ -812,3 +807,10 @@ header {
     border: 1px solid #000000;
 }
 
+
+.imagemdoformvendas {
+    position: absolute;
+    top: 20%;
+    margin-left: 280px;
+    z-index: -1;
+}
