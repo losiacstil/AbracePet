@@ -15,7 +15,7 @@ Sofia Silva Costa.
 
 **Escolha do tema e objetivo:**
 Este projeto foi desenvolvido pensando nas ONGs de animais, abrigos e até mesmo pessoas que passam por dificuldades com seus pets, que muitas vezes não têm a devida visibilidade.
-Optamos por desenvolver um site que ajude essaas instiuições/pessoas, para o recebimento de **ajuda financeiras**, **suprimentos** e até mesmo, se algum veterinário puder se oferecer para **atendimento veterinário gratuito**.
+Optamos por desenvolver um site que ajude essaas instiuições/pessoas, para o recebimento de **ajuda financeiras** e **suprimentos**.
 Além disso, pessoas que estiverem doando pets ou quiserem adotar um, elas podem facilmente encontra-los na nossa página de adoção, onde qualquer pessoa poderá publicar os pets disponíveis, e, quem quiser adotar, poderá fazer isso de forma digital e podem filtrar os pets disponíveis na sua cidade.
 
 **Elementos de acessibilidade baseado na WCAG**
