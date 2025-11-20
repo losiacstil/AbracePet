@@ -1,0 +1,745 @@
+@font-face {
+    font-family: 'Poppins-light';
+    src: url('../fonte/Poppins-Light.ttf') format('truetype')
+}
+
+body {
+    font-family: 'Poppins-light', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: black;
+    overflow-x: hidden;
+}
+
+.pelota {
+    width: 650px;
+    height: 650px;
+    flex-direction: row;
+    background-color: rgb(255, 98, 0);
+    border-radius: 50%;
+    margin-left: -400px;
+    margin-top: 0px;
+    clip-path: inset(0 0 4.6% 0);
+    position: relative;
+}
+
+.gatinho img {
+    position: absolute;
+    width: 700px;
+    height: auto;
+    top: -370px;
+    left: 50px;
+}
+
+.texto h1 {
+    font-size: 75px;
+    color: rgb(0, 0, 0);
+    text-align: left;
+    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.maedamae {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menuclicavel ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+.menuclicavel a {
+    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 400;
+    transition: 0.3s;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+
+.menuclicavel img {
+    width: 40px;
+    height: auto;
+}
+
+.menuclicavel a:hover {
+    font-size: 1.2em;
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+    color: rgb(255, 98, 0);
+}
+
+.menuzinho {
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.linha {
+    display: flex;
+    height: 45px;
+    width: 100%;
+    background-color: whitesmoke;
+    padding: 0 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.menuclicavel a:hover img {
+    filter: brightness(0) saturate(100%) invert(46%) sepia(74%) saturate(564%) hue-rotate(345deg) brightness(97%) contrast(94%);
+    transition: filter 0.3s ease;
+}
+
+.logodosite img {
+    width: 70px;
+    height: auto;
+    position: absolute;
+    left: 5px;
+    top: -12px;
+}
+
+.divisoria {
+    width: 100%;
+    height: 1px;
+    background-color: #000000;
+    margin: 20px auto;
+    border-radius: 2px;
+    margin-top: -30px;
+}
+
+.texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 500px;
+    margin-right: -100px;
+    margin-top: -160px;
+}
+
+.slogan {
+    margin-top: -50px;
+}
+
+.slogan span {
+    color: rgb(255, 98, 0);
+}
+
+.texto span {
+    color: rgb(255, 98, 0);
+}
+
+.sobre-nos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    padding-right: 10px;
+    width: 140px;
+    height: 40px;
+    background-color: rgb(255, 98, 0);
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.sobre-nos p {
+    color: white;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.sobre-nos a {
+    text-decoration: none;
+}
+
+.sobre-nos:hover {
+    transition: all 0.3s ease;
+    background-color: rgb(208, 90, 16);
+}
+
+.destaque a,
+.destaque img {
+    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    color: rgb(255, 98, 0);
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 400;
+    transition: 0.3s;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    filter: brightness(0) saturate(100%) invert(46%) sepia(74%) saturate(564%) hue-rotate(345deg) brightness(97%) contrast(94%);
+}
+
+.titulosobre {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: cover;
+}
+
+.titulosobre span {
+    color: rgb(255, 98, 0);
+}
+
+.paragrafos img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+.paragrafos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.paragrafos p {
+    width: 20%;
+}
+
+.tcolabo span {
+    color: rgb(255, 98, 0);
+}
+
+.tcolabo {
+    text-align: center;
+}
+
+.reconhecimento li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.reconhecimento img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.reconhecimento ul {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+}
+
+.tcontato {
+    text-align: center;
+}
+
+.rsociais li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rsociais img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+}
+
+.rsociais img:hover {
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+}
+
+.rsociais ul {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+}
+
+.rsociais a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.rsociais p {
+    text-decoration: none;
+}
+
+.formulario {
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.formulario textarea {
+    height: 120px;
+    width: 100%;
+    font-size: 14px;
+    border: 1px solid #000;
+    border-radius: 16px;
+    box-sizing: border-box;
+}
+
+.formulario input {
+    height: 35px;
+    width: 100%;
+    font-size: 14px;
+    border: 1px solid #000;
+    border-radius: 16px;
+    box-sizing: border-box;
+    margin-bottom: 12px;
+    color: #000;
+}
+
+.botao-enviar {
+    background-color: #ff6201;
+
+}
+
+.botao-enviar:hover {
+    background-color: #ff6201;
+}
+
+.altptalkback {
+    color: transparent;
+    font-size: 0px;
+}
+
+h1 span {
+    color: rgb(255, 98, 0);
+}
+
+.formulario-cadastro {
+    padding: 30px 40px;
+    border: none;
+    background-color: transparent;
+    border-radius: 15px;
+    border: 1px solid rgb(255, 98, 0);
+    max-width: 250px;
+    margin: -30px auto;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1;
+}
+
+fieldset {
+    border: 0;
+}
+
+input,
+select {
+    border-radius: 5px;
+}
+
+.campo {
+    margin-bottom: 1em;
+}
+
+.campo label {
+    margin-bottom: 0.3em;
+    color: #000000;
+    display: block;
+}
+
+fieldset.grupo.campo {
+    float: left;
+    margin-right: 1em;
+}
+
+.campo input[type="text"],
+.campo input[type="email"],
+.campo select {
+    padding: 0.3em;
+    border: 1px solid #ff8741;
+    box-shadow: 2px 2px 2px rgb(0, 0, 0, 0.5);
+    display: block;
+}
+
+.campo select option {
+    padding-right: 2em;
+}
+
+.button2 {
+    padding: 12px;
+    background-color: rgb(255, 98, 0);
+    color: white;
+    font-size: 20px;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.imag {
+    position: absolute;
+    top: 30%;
+    margin-left: -100px;
+    z-index: -1;
+}
+
+.imagem2 {
+    position: absolute;
+    top: 50px;
+    margin-left: -200px;
+}
+
+.botaoconcluido button {
+    width: 100%;
+    padding: 12px;
+    background-color: rgb(255, 119, 0);
+    color: white;
+    font-size: 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.botaoconcluido button:hover {
+    background-color: rgb(209, 102, 1);
+    transition: background-color 0.3s ease;
+}
+
+.titulo {
+    font-size: 50px;
+    text-align: center;
+    margin-top: -40px;
+    display: inline-block;
+}
+
+.pelota2 {
+    width: 500px;
+    height: 500px;
+    background-color: rgb(255, 98, 0);
+    border-radius: 50%;
+    margin-right: -200px;
+    margin-top: 100px;
+    position: absolute;
+    right: 0;
+    top: 100px;
+}
+
+.titulocentralizado {
+    text-align: center;
+    margin-top: -40px;
+}
+
+.pelota2 img {
+    position: absolute;
+    width: 600px;
+    height: auto;
+    top: -70px;
+    right: 10px;
+}
+
+.container-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.pelota3 img {
+    width: 500px;
+    height: auto;
+    margin-left: 150px;
+    margin-top: 50px;
+}
+
+.conteudo-formulario {
+    max-width: 300px;
+    margin-left: 300px;
+}
+
+#formAdocao {
+    padding: 80px 80px;
+    border: 1px solid rgb(255, 98, 0);
+    background-color: rgba(255, 98, 1, 0.1);
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    margin-top: -150px;
+}
+
+fieldset {
+    border: 0;
+    padding: 0;
+}
+
+.campo {
+    margin-bottom: 1em;
+}
+
+.campo label {
+    margin-bottom: 0em;
+    color: #000000;
+    display: block;
+}
+
+
+input,
+select {
+    width: 100%;
+    padding: 0.5em;
+    border-radius: 5px;
+    border: 1px solid #ff8741;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    background-color: white;
+}
+
+.pelota4 {
+    width: 650px;
+    height: 650px;
+    background-color: rgb(255, 98, 0);
+    border-radius: 60%;
+    margin-left: -300px;
+    margin-top: 0px;
+    clip-path: inset(0 0 4.6% 0);
+    position: absolute;
+}
+
+.textinhosform {
+    font-size: 25px;
+    position: absolute;
+    top: 50%;
+    left: 300px;
+    transform: translateY(-50%);
+    max-width: 400px;
+}
+
+.imag2 {
+    position: absolute;
+    top: 5%;
+    margin-left: 200px;
+}
+
+.outroform form {
+    padding: 30px 40px;
+    border: none;
+    background-color: transparent;
+    border-radius: 15px;
+    border: 1px solid rgb(255, 98, 0);
+    max-width: 250px;
+    margin: 20px auto;
+    margin-left: auto;
+    margin-right: 150px;
+}
+
+fieldset {
+    border: 0;
+}
+
+input,
+select {
+    border-radius: 5px;
+}
+
+.campo {
+    margin-bottom: 1em;
+}
+
+.campo label {
+    margin-bottom: 0.3em;
+    color: #000000;
+    display: block
+}
+
+fieldset.grupo.campo {
+    float: left;
+    margin-right: 1em;
+}
+
+.campo input[type="text"],
+.campo input[type="email"],
+.campo select {
+    padding: 0.3em;
+    border: 1px solid #ff8741;
+    box-shadow: 2px 2px 2px rgb(0, 0, 0, 0.5);
+    display: block;
+}
+
+.campo select option {
+    padding-right: 2em;
+}
+
+header {
+    color: rgb(0, 0, 0);
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.logo {
+    font-size: 35px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 28px;
+    color: #333;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 10px;
+}
+
+.card {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 17px;
+}
+
+.card-content h3 {
+    margin-bottom: 5px;
+    color: #000000;
+
+}
+
+.card-content p {
+    font-size: 19px;
+    color: #000000;
+}
+
+.card.destacar img {
+    height: 220px;
+    transition: height 0.3s ease;
+    object-fit: cover;
+}
+
+
+.info-section {
+    background-color: #eaf2f8;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.info-section p {
+    max-width: 700px;
+    margin: auto;
+    font-size: 18px;
+    color: #333;
+}
+
+.adotar-btn {
+    background-color: #fc7500;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin-top: 10px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.adotar-btn:hover {
+    background-color: #fc7500;
+}
+
+.cidadeseletor {
+    background-color: transparent;
+    text-align: center;
+    font-size: 16px;
+    width: 200px;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px auto;
+}
+
+.cidadeseletor select {
+    padding: 8px 12px;
+    margin-left: 10px;
+    border-radius: 5px;
+    border: 1px solid #000000;
+}
+
+.imagemdoformvendas {
+    position: absolute;
+    top: 20%;
+    margin-left: 280px;
+    z-index: -1;
+}
+
+.titulocentralizado2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.sobreoprojeto {
+    width: 50%;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.sobreoprojeto span {
+    color: rgb(255, 98, 0);
+}
+
+.voltar2 {
+    padding: 12px;
+    background-color: rgb(255, 98, 0);
+    color: white;
+    font-size: 20px;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: -20px;
+    display: inline-block;
+    position: fixed;
+}

@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Loja</title>
+    <link rel="stylesheet" href="../css/cssanimais.css">
+</head>
+
+<body>
+    <header>
+        <div class="menuzinho">
+            <div class="linha">
+                <div class="logodosite"><img src="../imagens/logosemescrita.png"></div>
+                <nav class="menuclicavel">
+                    <ul>
+                        <li>
+                            <a href="Projeto-Abrace-Pet.html" aria-label="Botão para a página inicial">
+                                <img src="../imagens/family_home_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg"
+                                    alt="Botão para a página inicial">
+                                <span>Casa</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="Formulário-de-Doação.html" aria-label="Botão para a página de doação voluntária">
+                                <img src="../imagens/volunteer_activism_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg"
+                                    alt="Botão para a página de doação voluntária">
+                                <span>Doe</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="Adoção.html" aria-label="Botão para a página de adoção de animais">
+                                <img src="../imagens/pets_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg"
+                                    alt="Botão para a página para adoção de animais">
+                                <span>Adote</span>
+                            </a>
+                        </li>
+                        <li>
+                            <div class="destaque">
+                                <a href="Loja.html" aria-label="Botão para a página de compras">
+                                    <img src="../imagens/shopping_bag_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg"
+                                        alt="Botão de página para nossa loja">
+                                    <span>Loja</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="Cadastro.html" aria-label="Botão para a página de cadastro">
+                                <img src="../imagens/login_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg"
+                                    alt="Botão para a página de cadastro">
+                                <span>Cadastre-se</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+    </header>
+<div class="titulocentralizado2">
+            <h1 class="titulo">Abrace<span>Pet</span></h1>
+        </div>
+
+    <div class="cidadeseletor">
+        <label for="cidade">Selecione um item:</label>
+        <select id="cidade" onchange="selecionarCidade()">
+            <option value="">Todos</option>
+            <option value="Ração">Ração</option>
+            <option value="Roupas animais">Roupas animais</option>
+            <option value="Acessórios">Acessórios</option>
+            <option value="Brinquedos">Brinquedos</option>
+        </select>
+    </div>
+
+
+    <section class="container" id="animais">
+        <section class="container" id="animais">
+
+            <div class="cards">
+                <div class="card" data-cidade="Ração">
+                    <img src="../imagens/kkkkkkkkk.jpg" alt="cachorro">
+                    <div class="card-content">
+                        <h3> Ração para cachorro </h3>
+                        <p> 5 kg </p>
+                        <br>
+                        <p> R$ 39,90 </p>
+                        <br>
+                        <p>Por: PetShop Doggs n' Roses</p>
+
+                        <button class="adotar-btn" onclick="window.location.href='Formulário-de-Vendas.html'">Quero
+                            Comprar</button>
+                    </div>
+                </div>
+
+
+                <div class="card" data-cidade="Ração">
+                    <img src="../imagens/gato.jpg" alt="gato">
+                    <div class="card-content">
+                        <h3> Ração para gato </h3>
+                        <p> 5 kg </p>
+                        <br>
+                        <p> R$ 39,90 </p>
+                        <br>
+                        <p>Por: PetShop Gatitos Felizes</p>
+                        <button class="adotar-btn" onclick="window.location.href='Formulário-de-Vendas.html'">Quero
+                            Comprar</button>
+                    </div>
+                </div>
+
+                <div class="card" data-cidade="Ração">
+                    <img src="../imagens/galo.webp" alt="galo">
+                    <div class="card-content">
+                        <h3> Ração para galo </h3>
+                        <p> 5 kg </p>
+                        <br>
+                        <p> R$ 40,90 </p>
+                        <br>
+                        <p>Por: Sítio do Charles</p>
+                        <button class="adotar-btn" onclick="window.location.href='Formulário-de-Vendas.html'">Quero
+                            Comprar</button>
+                    </div>
+                </div>
+
+                <div class="card" data-cidade="Ração">
+                    <img src="../imagens/coelho.jpg" alt="coelho">
+                    <div class="card-content">
+                        <h3> Ração para coelho </h3>
+                        <p> 5 kg </p>
+                        <br>
+                        <p> R$ 35,90 </p>
+                        <br>
+                        <p>Por: PetShop Agropecuária Orquídea</p>
+                        <button class="adotar-btn" onclick="window.location.href='Formulário-de-Vendas.html'">Quero
+                            Comprar</button>
+                    </div>
+                </div>
+
+                <div class="card" data-cidade="Ração">
+                    <img src="../imagens/passaro.webp" alt="passaro">
+                    <div class="card-content">
+                        <h3> Ração para pássaro </h3>
+                        <p> 2 kg </p>
+                        <br>
+                        <p> R$ 20,90 </p>
+                        <br>
+                        <p>Por: PetShop Do Matilde</p>
+                        <button class="adotar-btn" onclick="window.location.href='Formulário-de-Vendas.html'">Quero
+                            Comprar</button>
+                    </div>
+                </div>
+
+                <div class="card" data-cidade="Brinquedos">
+                    <img src="../imagens/cachoooorrro.jpg" alt="cachorro">
+                    <div class="card-content">
+                        <h3> Brinquedo para cachorro </h3>
+                        <p> 5 kg </p>
+                        <br>
+                        <p> R$ 39,90 </p>
+                        <br>
+                        <p>Por: AbracePet</p>
+
+                        <button class="adotar-btn" onclick="window.location.href='Formulário-de-Vendas.html'">Quero
+                            Comprar</button>
+                    </div>
+                </div>
+
+
+                <div class="card" data-cidade="Brinquedos">
+                    <img src="../imagens/coelhoos.webp" alt="coelho">
+                    <div class="card-content">
+                        <h3> Brinquedos para coelho</h3>
+                        <p> madeira e feno</p>
+                        <br>
+                        <p> R$ 30,00 </p>
+                        <br>
+                        <p>Por: PetPetite</p>
+                        <button class="adotar-btn" onclick="window.location.href='Formulário-de-Vendas.html'">Quero
+                            Comprar</button>
+                    </div>
+                </div>
+
+                <div class="card" data-cidade="Brinquedos">
+                    <img src="../imagens/gaaato.jpg" alt="gato">
+                    <div class="card-content">
+                        <h3> Kit 12 brinquedos para gato</h3>
+                        <p>brinquedos interativos</p>
+                        <br>
+                        <p> R$ 21,90 </p>
+                        <br>
+                        <p>Por: AbracePet</p>
+                        <button class="adotar-btn" onclick="window.location.href='Formulário-de-Vendas.html'">Quero
+                            Comprar</button>
+                    </div>
+                </div>
+
+                <div class="card" data-cidade="Brinquedos">
+                    <img src="../imagens/puleiro.jpg" alt="puleiro">
+                    <div class="card-content">
+                        <h3> Puleiro para pássaros</h3>
+                        <p>Puleiro pequeno para pássaros domésticos</p>
+                        <br>
+                        <p> R$ 19,99 </p>
+                        <br>
+                        <p>Por: AbracePet</p>
+                        <button class="adotar-btn" onclick="window.location.href='Formulário-de-Vendas.html'">Quero
+                            Comprar</button>
+                    </div>
+                </div>
+
+                <div class="card" data-cidade="Acessórios">
+                    <img src="../imagens/cachorro azul.jpg" alt="camaazul">
+                    <div class="card-content">
+                        <h3> Cama para cachorro</h3>
+                        <p>Azul</p>
+                        <p> R$ 25,90 </p>
+                        <p>P, M, G</p>
+                        <p>Por: PetCão</p>
+                        <button class="adotar-btn" onclick="window.location.href='Formulário-de-Vendas.html'">Quero
+                            Comprar</button>
+                    </div>
+                </div>
+
+                <div class="card" data-cidade="Acessórios">
+                    <img src="../imagens/cachorro rosa.webp" alt="rosa">
+                    <div class="card-content">
+                        <h3> Cama para cachorro</h3>
+                        <p>Rosa</p>
+                        <p>P, M, G</p>
+                        <p> R$ 20,99 </p>
+                        <p>Por: AbracePet</p>
+                        <button class="adotar-btn" onclick="window.location.href='Formulário-de-Vendas.html'">Quero
+                            Comprar</button>
+                    </div>
+                </div>
+
+                <div class="card" data-cidade="Acessórios">
+                    <img src="../imagens/gato.webp" alt="azull">
+                    <div class="card-content">
+                        <h3> Cama para gato/ cachorro</h3>
+                        <p>Amarelo</p>
+                        <p>P, M, G</p>
+                        <p> R$ 20,99 </p>
+                        <p>Por: AbracePet</p>
+                        <button class="adotar-btn" onclick="window.location.href='Formulário-de-Vendas.html'">Quero
+                            Comprar</button>
+                    </div>
+                </div>
+
+                <div class="card" data-cidade="Acessórios">
+                    <img src="../imagens/gato rosa.webp" alt="sosaa">
+                    <div class="card-content">
+                        <h3> Cama para gato</h3>
+                        <p>Rosa</p>
+
+                        <p> R$ 20,99 </p>
+                        <p>Por: AbracePet</p>
+                        <button class="adotar-btn" onclick="window.location.href='Formulário-de-Vendas.html'">Quero
+                            Comprar</button>
+                    </div>
+                </div>
+
+                <div class="card" data-cidade="Acessórios">
+                    <img src="../imagens/caixaareia.jpg" alt="caixa">
+                    <div class="card-content">
+                        <h3> Caixa de areia para gato</h3>
+                        <p>rosa e Azul</p>
+                        <p>P, M, G</p>
+                        <p> R$ 49,90 </p>
+                        <p>Por: AbracePet</p>
+                        <button class="adotar-btn" onclick="window.location.href='Formulário-de-Vendas.html'">Quero
+                            Comprar</button>
+                    </div>
+                </div>
+
+                <div class="card" data-cidade="Acessórios">
+                    <img src="../imagens/areia.jpg" alt="areia">
+                    <div class="card-content">
+                        <h3> Areia para gato</h3>
+                        <p>2 kg</p>
+
+                        <p> R$ 29,90 </p>
+                        <p>Por: AbracePet</p>
+                        <button class="adotar-btn" onclick="window.location.href='Formulário-de-Vendas.html'">Quero
+                            Comprar</button>
+                    </div>
+                </div>
+
+
+                <div class="card" data-cidade="Roupas animais">
+                    <img src="../imagens/cachorro peq.jpg" alt="cachorro">
+                    <div class="card-content">
+                        <h3> Roupas para cachorro frio</h3>
+
+                        <p>P, M, G</p>
+                        <p> Várias cores </p>
+                        <p> R$ 19,90 </p>
+                        <p>Por: CatDogGriff</p>
+                        <button class="adotar-btn" onclick="window.location.href='Formulário-de-Vendas.html'">Quero
+                            Comprar</button>
+                    </div>
+                </div>
+
+                <div class="card" data-cidade="Roupas animais">
+                    <img src="../imagens/roupinha gato.jpg" alt="roupa gato">
+                    <div class="card-content">
+                        <h3> Roupinhas para gato frio</h3>
+                        <p> Várias cores </p>
+                        <p> R$ 19,90 </p>
+                        <p>Por: CatDogGriff </p>
+                        <button class="adotar-btn" onclick="window.location.href='Formulário-de-Vendas.html'">Quero
+                            Comprar</button>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <script>
+                function selecionarCidade() {
+                    const cidadeSelecionada = document.getElementById("cidade").value;
+                    const cards = document.querySelectorAll(".card");
+
+                    cards.forEach(card => {
+                        const cidadeDoCard = card.getAttribute("data-cidade");
+
+                        if (cidadeSelecionada === "" || cidadeSelecionada === cidadeDoCard) {
+                            card.style.display = "block";
+                            card.classList.add("destacar");
+                        } else {
+                            card.style.display = "none";
+                            card.classList.remove("destacar");
+                        }
+                    });
+                }
+
+            </script>
+
+
+        </section>
+
+</body>
+
+</html>

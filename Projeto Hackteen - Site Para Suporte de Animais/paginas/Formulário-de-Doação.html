@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doação</title>
+    <link rel="stylesheet" href="../css/cssanimais.css">
+</head>
+
+<body style="overflow: hidden;">
+    <a href="Projeto-Abrace-Pet.html" class="button2">Voltar</a>
+
+    <h1 class="h1">Abrace<span>Pet</span></h1>
+    <div class="pelota4">
+        <img class="imag2" src="../imagens/pets-removebg-preview.png">
+    </div>
+    <p class="textinhosform">Sua doação é muito importante para nosso projeto
+        e para nossos pets. Venha contribuir e se junte
+        a nossa comunidade!</p>
+
+
+    <div class="outroform">
+
+        <form>
+            <h1 style="text-align: center;">Doação </h1>
+            <p style="text-align: center;">Preencha aqui para completar a doação:</p>
+            <div style="text-align: center;">
+                <img src="../imagens/volunteer_activism_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg">
+            </div>
+            <fieldset class="grupo">
+                <div class="campo">
+                    <label>Nome:</label>
+                    <input type="text" name="Nome" id="Nome" required>
+                </div>
+
+                <div class="campo">
+                    <label for="Cidade">Cidade</label>
+                    <select id="Cidade" required>
+                        <option selected disabled value="">Selecione</option>
+                        <option>Bernardino de Campos</option>
+                        <option>Canitar</option>
+                        <option>Chavantes</option>
+                        <option>Campos novos Paulista</option>
+                        <option>Ibirarema</option>
+                        <option>Ipaussu</option>
+                        <option>Lupércio</option>
+                        <option>Manduri</option>
+                        <option>Ocauçu</option>
+                        <option>Ourinhos</option>
+                        <option>Ribeirão do Sul</option>
+                        <option>Salto Grande</option>
+                        <option>Santa Cruz do Rio Pardo</option>
+                        <option>São Pedro do Turvo</option>
+                        <option>Timburi</option>
+                        <option>Tejupá</option>
+                    </select>
+
+
+                </div>
+
+
+                <div class="campo">
+                    <label>Email:</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+
+
+                <div class="campo">
+                    <div>
+                        <label for="doacao">Desejo doar:</label>
+                        <select id="doacao" required>
+                            <option selected disabled value="">Selecione</option>
+                            <option value="mantimentos">Mantimentos (ração ou sachê)</option>
+                            <option value="caminhas">Caminhas ou cobertores</option>
+                            <option value="brinquedos">Brinquedos</option>
+                            <option value="dinheiro">Dinheiro</option>
+                        </select>
+                    </div>
+
+                    <div id="dinheiroContainer" style="display:none;">
+                        <label for="listaDinheiro">Forma de pagamento:</label>
+                        <select id="listaDinheiro">
+                            <option selected disabled value="">Selecione a forma de pagamento</option>
+                            <option value="Débito">Débito</option>
+                            <option value="Crédito">Crédito</option>
+                            <option value="Pix">Transferência (Pix)</option>
+                            <option value="Boleto">Boleto Bancário</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div id="outroValorContainer" style="display:none; margin-top:10px;">
+                    <label for="outroValor">Digite o valor:</label>
+                    <input type="number" id="outroValor" min="1" placeholder="Ex: 100">
+                </div>
+
+                <script>
+                    const doacao = document.getElementById('doacao');
+                    const dinheiroContainer = document.getElementById('dinheiroContainer');
+                    const listaDinheiro = document.getElementById('listaDinheiro');
+                    const outroValorContainer = document.getElementById('outroValorContainer');
+
+                    doacao.addEventListener('change', function () {
+                        dinheiroContainer.style.display = this.value === 'dinheiro' ? 'block' : 'none';
+                        outroValorContainer.style.display = 'none';
+                        listaDinheiro.value = "";
+                    });
+
+
+
+                    listaDinheiro.addEventListener('change', function () {
+                        if (this.value) {
+                            outroValorContainer.style.display = 'block';
+                        }
+                    });
+
+                </script>
+
+
+                <div class="botaoconcluido">
+                    <button type="submit">Concluído!</button>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+
+</body>
+
+</html>

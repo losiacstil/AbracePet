@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário Venda</title>
+    <link rel="stylesheet" href="../css/cssanimais.css" />
+</head>
+
+<body style="overflow: hidden;">
+    <a href="Loja.html" class="button2">Voltar</a>
+
+    <h1>Abrace<span>Pet</span></h1>
+
+<div class="pelota4">
+<div class="imagemdoformvendas">
+            <img src="../imagens/amor.png" alt="amor">
+            </div>
+        </div>
+
+    <div class="container-flex">
+        <form id="formAdocao" method="POST" action="#">
+            <fieldset class="grupo">
+                <div class="campo">
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="nome" id="nome" required />
+                </div>
+
+                <div class="campo">
+                    <label for="cidade">Endereço:</label>
+                    <input type="text" name="endereço" id="endereço" required />
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" required />
+                </div>
+
+                <div class="campo">
+                    <label for="pet">Desejo comprar:</label>
+                    <input type="text" name="item" id="item" required />
+                    </select>
+                </div>
+                <div class="campo">
+                    <label for="pagamento">Forma de pagamento:</label>
+                    <select name="pagamento" id="pagamento" required>
+                        <option selected disabled value="">Selecione</option>
+                        <option value="credito">Cartão de Crédito</option>
+                        <option value="debito">Cartão de Débito</option>
+                        <option value="pix">Pix</option>
+                    </select>
+                </div>
+
+                <div class="botaoconcluido">
+                    <button type="submit">Concluído!</button>
+                </div>
+
+
+            </fieldset>
+        </form>
+    </div>
+    </div>
+    <script>
+
+    </script>
+
+</body>
+
+</html>
